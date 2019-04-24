@@ -1,0 +1,16 @@
+<h1>Edit</h1>
+<form action="/todo/1/update" method="POST">
+  <p>id: 1</p>
+  <div>
+    <p>やること:</p>
+    <textarea name="body">やること</textarea>
+  </div>
+  <p>ステータス:
+    <select name="status">
+      <option value="0">未着手</option>
+      <option value="1">進行中</option>
+      <option value="2">終了</option>
+    </select>
+  </p>
+  <button type="submit">編集</button>
+</form>

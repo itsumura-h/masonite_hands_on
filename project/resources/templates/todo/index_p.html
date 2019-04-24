@@ -1,0 +1,21 @@
+<h1>Index</h1>
+<table border="1">
+  <tr><th>id</th><th>やること</th><th>ステータス</th><th>編集</th><th>削除</th></tr>
+    <tr>
+      <td>1</td>
+      <td>やること</td>
+      <td>未着手</td>
+      <td><a href="/todo/1/edit">編集</a></td>
+      <!-- 「~」を使うとintをstr型に変換した上で文字列と結合してくれる -->
+      <td>
+        <form method="post" action="/todo/1/delete">
+          <button>削除</button>
+        </form>
+      </td>
+    </tr>
+</table>
+
+<form method="post" action="/todo">
+  <input type="text" name='body'>
+  <button type="submit">送信</button>
+</form>
